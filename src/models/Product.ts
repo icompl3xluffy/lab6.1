@@ -3,7 +3,7 @@ export class Product{
     name: string,
     price: number, 
 
-    consructor(sku: string,  name: string, price: number,)
+    constructor(sku: string,  name: string, price: number,)
     {
         this.sku= sku
         this.name= name;

@@ -9,5 +9,5 @@ const products = [
 for (const product of products) {
     console.log(product.displayDetails());
     console.log(`Final price with tax: $${calculateTax(product).toFixed(2)}`);
-    console.log("---");
+    console.log("");
 }
