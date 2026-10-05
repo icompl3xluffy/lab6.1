@@ -1,4 +1,5 @@
-import { Product } from "./Product";
+import { Product } from "./Product.js";
+
 export class PhysicalProduct extends Product {
   constructor(
     sku: string,

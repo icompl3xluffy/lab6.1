@@ -1,10 +1,15 @@
-export  class Product{
-    consructor(
-    sku:string,
-    name:string,
-    price:number
-    )
-}
+export class Product{
+    sku: string,  
+    name: string,
+    price: number, 
+
+    consructor(sku: string,  name: string, price: number,)
+    {
+        this.sku= sku
+        this.name= name;
+        this.price= price
+    }
+
 
 displayDetails():string{
     return `SKU: ${this.sku} | Name: ${this.name} | Price: $ ${this.price.toFixed(2)}`;
@@ -12,4 +17,5 @@ displayDetails():string{
 
 getPriceWithTax(): number{
     return this.price;
+}
 }
