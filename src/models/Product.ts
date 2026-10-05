@@ -1,4 +1,4 @@
-export class Product{
+export  class Product{
     consructor(
     sku:string,
     name:string,
@@ -6,4 +6,10 @@ export class Product{
     )
 }
 
-displayDetails
+displayDetails():string{
+    return `SKU: ${this.sku} | Name: ${this.name} | Price: $ ${this.price.toFixed(2)}`;
+}
+
+getPriceWithTax(): number{
+    return this.price;
+}
